@@ -15,7 +15,6 @@ class User {
   Date signin
   Date birthday
   Address address
-  //below required by authentication plugin
   //below, in addition to password, required by spring security plugin
   String password
   String username
@@ -25,6 +24,8 @@ class User {
   boolean passwordExpired = false
   //below oauth entities
   static hasOne = [fbUser:FacebookUser]
+  //below application concerns
+  static hasMany = [measures: Measure, contributions: Contribution, comments: Comment, requests: Request]
 
   static constraints = {
     firstName(nullable: true, size: 1..64)
