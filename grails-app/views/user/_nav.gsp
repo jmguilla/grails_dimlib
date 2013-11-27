@@ -9,7 +9,7 @@
 		${flash.error}
 	</div>
 </g:if>
-<ul class="nav nav-tabs nav-justified">
+<ul class="nav nav-tabs nav-justified top-buffer">
 	<li class="${activeNav == 'dashboard' ? 'active' : '' }"><a href="${activeNav == 'dashboard' ? '#': g.createLink(controller: 'user', action: 'dashboard', id: userInstance.id)}"><g:message code="gsp.user.account.nav.dashboard.label" default="Dashboard"/></a></li>
 	<li class="${activeNav == 'profile' ? 'active' : '' }"><a href="${activeNav == 'profile' ? '#': g.createLink(controller: 'user', action: 'edit', id: userInstance.id)}"><g:message code="gsp.user.account.nav.profile.label" default="Profile"/></a></li>
 	<li class="${activeNav == 'account' ? 'active' : '' }"><a href="${activeNav == 'account' ? '#': g.createLink(controller: 'user', action: 'account', id: userInstance.id)}"><g:message code="gsp.user.account.nav.account.label" default="Account"/></a></li>
