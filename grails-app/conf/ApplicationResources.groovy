@@ -3,6 +3,10 @@ modules = {
     dependsOn 'bootstrap' 
     resource url: 'css/main.css' 
   }
+  auth_css{
+    dependsOn 'main_css'
+    resource url: 'css/auth.css'
+  }
   application { resource url:'js/application.js' }
   angular{
     dependsOn 'jquery'

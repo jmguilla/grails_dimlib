@@ -156,3 +156,4 @@ grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.jmguilla.
 grails.plugins.springsecurity.userLookup.usernamePropertyName='email'
 grails.plugins.springsecurity.authority.className = 'com.jmguilla.Role'
 grails.plugins.springsecurity.facebook.domain.classname='com.jmguilla.oauth.FacebookUser'
+
