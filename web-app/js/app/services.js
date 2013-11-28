@@ -1,8 +1,8 @@
 'use strict';
 /* Services */
-angular.module('grailsTemplateServices', ['ngResource']).
+angular.module('dimlibServices', ['ngResource']).
   factory('User', function($resource){
-  return $resource('/grails_template/user/:actionId/:userId.json', {actionId: 'list', userId: '@id'}, {
+  return $resource('/dimlib/user/:actionId/:userId.json', {actionId: 'list', userId: '@id'}, {
   	me:{
   		method: 'GET',
   		params: {
@@ -25,5 +25,9 @@ angular.module('grailsTemplateServices', ['ngResource']).
   			'Accept': 'application/json'
   		}
 	  }
+  });
+}).
+factory('Item', function($resource){
+  return $resource('/dimlib/item/:actionId/:itemId.json', {actionId: '', itemId: '@id'}, {
   });
 });

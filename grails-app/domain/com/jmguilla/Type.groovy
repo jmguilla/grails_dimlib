@@ -2,6 +2,9 @@ package com.jmguilla
 
 class Type {
 
-    static constraints = {
-    }
+  String value
+
+  static constraints = {
+    value nullable: false, blank: false
+  }
 }
